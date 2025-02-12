@@ -34,7 +34,7 @@ socket.onopen = () => {
     console.log("Connected to Coinbase WebSocket!");
     const subscribeMessage = {
         "type": "subscribe",
-        "channels": [{ "name": "ticker", "product_ids": ["BTC-USD"] }]
+        "channels": [{ "name": "ticker", "product_ids": ["DOGE-USD"] }]
     };
     socket.send(JSON.stringify(subscribeMessage));
 };
